@@ -1,0 +1,7 @@
+{
+  "/challenge/page": "app/challenge/page.js",
+  "/page": "app/page.js",
+  "/api/verify/route": "app/api/verify/route.js",
+  "/failure/page": "app/failure/page.js",
+  "/hint/page": "app/hint/page.js"
+}
