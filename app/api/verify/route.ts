@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { Prisma } from '@prisma/client';
 
 export async function POST(request: Request) {
   try {
@@ -19,7 +20,7 @@ export async function POST(request: Request) {
 
     if (normalizedInput === normalizedCorrect) {
       // Prisma: トランザクションで現在の人数を取得し、+1 して登録する
-      const record = await prisma.$transaction(async (tx) => {
+      const record = await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
         const currentCount = await tx.clearRecord.count();
         const newRank = currentCount + 1;
         return tx.clearRecord.create({

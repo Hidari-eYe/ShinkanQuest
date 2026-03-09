@@ -15,7 +15,7 @@ export async function POST(request: Request) {
       });
 
       // 古いレスポンス形式に合わせるための整形
-      const formattedRecords = records.map(r => ({
+      const formattedRecords = records.map((r: { id: string; rank: number; timestamp: Date }) => ({
         id: r.id,
         rank: r.rank,
         timestamp: r.timestamp.toISOString(),
