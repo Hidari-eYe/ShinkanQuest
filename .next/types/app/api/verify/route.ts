@@ -1,4 +1,4 @@
-// File: c:\Users\Owner\OneDrive\Desktop\新しいフォルダー\2026_shinkan\app\api\verify\route.ts
+// File: C:\Users\Owner\OneDrive\Desktop\新しいフォルダー\2026_shinkan\app\api\verify\route.ts
 import * as entry from '../../../../../app/api/verify/route.js'
 import type { NextRequest } from 'next/server.js'
 

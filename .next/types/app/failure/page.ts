@@ -1,4 +1,4 @@
-// File: c:\Users\Owner\OneDrive\Desktop\新しいフォルダー\2026_shinkan\app\failure\page.tsx
+// File: C:\Users\Owner\OneDrive\Desktop\新しいフォルダー\2026_shinkan\app\failure\page.tsx
 import * as entry from '../../../../app/failure/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
